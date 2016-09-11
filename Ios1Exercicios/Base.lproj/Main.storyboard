@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="n6h-vC-Vjh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Tabela-->
+        <scene sceneID="OKB-0n-zUk">
+            <objects>
+                <tableViewController title="Tabela" id="yF4-hx-St0" customClass="TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="b6Q-Eo-hq0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="200" maxX="0.0" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="prato" id="8yZ-kf-Npk">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8yZ-kf-Npk" id="0X4-w4-07o">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yF4-hx-St0" id="A0n-Z8-VIB"/>
+                            <outlet property="delegate" destination="yF4-hx-St0" id="Cq4-1H-XJk"/>
+                        </connections>
+                    </tableView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Exercício 2 Tabela" id="vgB-KI-sWh"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="400" height="500"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x36-E4-FRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997" y="563"/>
+        </scene>
+        <!--Coleção-->
+        <scene sceneID="iJ5-NQ-cqH">
+            <objects>
+                <collectionViewController title="Coleção" modalTransitionStyle="flipHorizontal" id="Jsa-TS-HmJ" customClass="ColecaoViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="KYi-1U-VyM" customClass="Colecao">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="TJS-56-ifw">
+                            <size key="itemSize" width="168" height="126"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="colecao" id="vMp-gz-MfY">
+                                <rect key="frame" x="10" y="10" width="168" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="168" height="126"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Jsa-TS-HmJ" id="GsW-WF-icF"/>
+                            <outlet property="delegate" destination="Jsa-TS-HmJ" id="OjW-Va-Zzy"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Exercício 1 Coleção" id="tKn-WO-Aiz"/>
+                    <connections>
+                        <outlet property="colecao" destination="KYi-1U-VyM" id="PZU-pS-uUs"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qRk-f2-wez" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="-136"/>
+        </scene>
+        <!--Exercício 3 Formas-->
+        <scene sceneID="yhm-yA-NUq">
+            <objects>
+                <viewController id="QVJ-Wf-o2R" customClass="FormasViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cPq-d1-09H"/>
+                        <viewControllerLayoutGuide type="bottom" id="W6E-e6-Lnn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fja-1J-wES">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y3C-v9-ID8">
+                                <rect key="frame" x="72" y="211" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WfU-5d-bRS">
+                                <rect key="frame" x="72" y="370" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Okz-oI-ItX">
+                                <rect key="frame" x="72" y="49" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Exercício 3 Formas" id="kPO-Pu-n5j"/>
+                    <connections>
+                        <outlet property="circulo" destination="WfU-5d-bRS" id="eux-Eb-2Qa"/>
+                        <outlet property="estrela" destination="Okz-oI-ItX" id="dOx-2r-UWe"/>
+                        <outlet property="pentagono" destination="y3C-v9-ID8" id="3vm-I8-c9m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pfq-v9-DRT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="563"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lAk-GX-1Sb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n6h-vC-Vjh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zda-2Q-1gl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LZF-hh-0cP" kind="relationship" relationship="rootViewController" id="JJ7-zx-1v8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lTu-eH-SOU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254" y="-136"/>
+        </scene>
+        <!--Tabs-->
+        <scene sceneID="lYV-Dj-NvQ">
+            <objects>
+                <tabBarController title="Tabs" automaticallyAdjustsScrollViewInsets="NO" id="LZF-hh-0cP" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="qw9-Iy-RpD"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="gZD-ZN-7Ew">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Jsa-TS-HmJ" kind="relationship" relationship="viewControllers" id="H1U-nu-Qit"/>
+                        <segue destination="yF4-hx-St0" kind="relationship" relationship="viewControllers" id="Gpl-ra-tbg"/>
+                        <segue destination="QVJ-Wf-o2R" kind="relationship" relationship="viewControllers" id="Myi-wj-5y2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdC-Hb-bym" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997" y="-136"/>
+        </scene>
+    </scenes>
+</document>
