@@ -6,7 +6,7 @@
 //  Copyright © 2016 IESB. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
 @interface ViewPentagono : UIView
 
